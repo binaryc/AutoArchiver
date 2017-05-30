@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37F8C9FA1EDE216700C9B7EE /* NSObject+Archiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F8C9F71EDE216700C9B7EE /* NSObject+Archiver.m */; };
+		37F8C9FB1EDE216700C9B7EE /* NSObject+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F8C9F91EDE216700C9B7EE /* NSObject+Hook.m */; };
 		95B5E73A1ED7C01200085FEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5E7391ED7C01200085FEA /* main.m */; };
 		95B5E73D1ED7C01200085FEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5E73C1ED7C01200085FEA /* AppDelegate.m */; };
 		95B5E7401ED7C01200085FEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5E73F1ED7C01200085FEA /* ViewController.m */; };
 		95B5E7431ED7C01200085FEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B5E7411ED7C01200085FEA /* Main.storyboard */; };
 		95B5E7451ED7C01200085FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95B5E7441ED7C01200085FEA /* Assets.xcassets */; };
 		95B5E7481ED7C01200085FEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B5E7461ED7C01200085FEA /* LaunchScreen.storyboard */; };
-		95B5E75A1ED7C77800085FEA /* NSObject+Archiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5E7571ED7C77800085FEA /* NSObject+Archiver.m */; };
-		95B5E75B1ED7C77800085FEA /* NSObject+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5E7591ED7C77800085FEA /* NSObject+Hook.m */; };
 		95B5E75E1ED7CA6C00085FEA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5E75D1ED7CA6C00085FEA /* User.m */; };
 		95B5E7641ED8285200085FEA /* AddFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5E7631ED8285200085FEA /* AddFriendsViewController.m */; };
 		95B5E7681ED82DBB00085FEA /* UserInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5E7661ED82DBB00085FEA /* UserInfoCell.m */; };
@@ -24,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37F8C9F61EDE216700C9B7EE /* NSObject+Archiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Archiver.h"; sourceTree = "<group>"; };
+		37F8C9F71EDE216700C9B7EE /* NSObject+Archiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Archiver.m"; sourceTree = "<group>"; };
+		37F8C9F81EDE216700C9B7EE /* NSObject+Hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Hook.h"; sourceTree = "<group>"; };
+		37F8C9F91EDE216700C9B7EE /* NSObject+Hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Hook.m"; sourceTree = "<group>"; };
 		95B5E7351ED7C01200085FEA /* AutoArchiverDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoArchiverDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B5E7391ED7C01200085FEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95B5E73B1ED7C01200085FEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -34,10 +38,6 @@
 		95B5E7441ED7C01200085FEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95B5E7471ED7C01200085FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95B5E7491ED7C01200085FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95B5E7561ED7C77800085FEA /* NSObject+Archiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Archiver.h"; sourceTree = "<group>"; };
-		95B5E7571ED7C77800085FEA /* NSObject+Archiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Archiver.m"; sourceTree = "<group>"; };
-		95B5E7581ED7C77800085FEA /* NSObject+Hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Hook.h"; sourceTree = "<group>"; };
-		95B5E7591ED7C77800085FEA /* NSObject+Hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Hook.m"; sourceTree = "<group>"; };
 		95B5E75C1ED7CA6C00085FEA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		95B5E75D1ED7CA6C00085FEA /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		95B5E7621ED8285200085FEA /* AddFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendsViewController.h; sourceTree = "<group>"; };
@@ -61,6 +61,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37F8C9F51EDE216700C9B7EE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				37F8C9F61EDE216700C9B7EE /* NSObject+Archiver.h */,
+				37F8C9F71EDE216700C9B7EE /* NSObject+Archiver.m */,
+				37F8C9F81EDE216700C9B7EE /* NSObject+Hook.h */,
+				37F8C9F91EDE216700C9B7EE /* NSObject+Hook.m */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
 		95B5E72C1ED7C01200085FEA = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +107,7 @@
 				95B5E76A1ED855D500085FEA /* UserInfoInputCell.h */,
 				95B5E76B1ED855D500085FEA /* UserInfoInputCell.m */,
 				95B5E76C1ED855D500085FEA /* UserInfoInputCell.xib */,
-				95B5E7551ED7C77800085FEA /* src */,
+				37F8C9F51EDE216700C9B7EE /* src */,
 				95B5E7441ED7C01200085FEA /* Assets.xcassets */,
 				95B5E7461ED7C01200085FEA /* LaunchScreen.storyboard */,
 				95B5E7491ED7C01200085FEA /* Info.plist */,
@@ -110,17 +122,6 @@
 				95B5E7391ED7C01200085FEA /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		95B5E7551ED7C77800085FEA /* src */ = {
-			isa = PBXGroup;
-			children = (
-				95B5E7561ED7C77800085FEA /* NSObject+Archiver.h */,
-				95B5E7571ED7C77800085FEA /* NSObject+Archiver.m */,
-				95B5E7581ED7C77800085FEA /* NSObject+Hook.h */,
-				95B5E7591ED7C77800085FEA /* NSObject+Hook.m */,
-			);
-			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,12 +200,12 @@
 			files = (
 				95B5E7641ED8285200085FEA /* AddFriendsViewController.m in Sources */,
 				95B5E7401ED7C01200085FEA /* ViewController.m in Sources */,
-				95B5E75A1ED7C77800085FEA /* NSObject+Archiver.m in Sources */,
 				95B5E75E1ED7CA6C00085FEA /* User.m in Sources */,
 				95B5E7681ED82DBB00085FEA /* UserInfoCell.m in Sources */,
-				95B5E75B1ED7C77800085FEA /* NSObject+Hook.m in Sources */,
 				95B5E76D1ED855D500085FEA /* UserInfoInputCell.m in Sources */,
+				37F8C9FA1EDE216700C9B7EE /* NSObject+Archiver.m in Sources */,
 				95B5E73D1ED7C01200085FEA /* AppDelegate.m in Sources */,
+				37F8C9FB1EDE216700C9B7EE /* NSObject+Hook.m in Sources */,
 				95B5E73A1ED7C01200085FEA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +365,7 @@
 				95B5E74E1ED7C01200085FEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

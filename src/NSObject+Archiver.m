@@ -99,10 +99,10 @@ static NSString *didAddMethod;
     for (int i = 0; i < varsCount; i++) {
         Ivar var = vars[i];
         NSString *varName = [NSString stringWithUTF8String:ivar_getName(var)];
-        NSString *varType = [NSString stringWithUTF8String:ivar_getTypeEncoding(var)];
+        const char *varType = ivar_getTypeEncoding(var);
         
         id obj;
-        if ([varType hasPrefix:@"@"]) {
+        if (*varType == '@') {
             obj = object_getIvar(self, var);
             [aCoder encodeObject:obj forKey:varName];
         } else {
@@ -110,22 +110,22 @@ static NSString *didAddMethod;
             ptrdiff_t offset = ivar_getOffset(var);
             unsigned char *stuffBytes = (unsigned char *)(__bridge void *)self;
             
-            if ([varType isEqualToString:@"B"]) {
+            if (*varType == 'B') {
                 BOOL boolValue = *((BOOL *)(stuffBytes + offset));
                 [aCoder encodeBool:boolValue forKey:varName];
-            } else if ([varType isEqualToString:@"i"]) {
+            } else if (*varType == 'i') {
                 int intValue = *((int *)(stuffBytes + offset));
                 [aCoder encodeInt:intValue forKey:varName];
-            } else if ([varType isEqualToString:@"f"]) {
+            } else if (*varType == 'f') {
                 float floatValue = *((float *)(stuffBytes + offset));
                 [aCoder encodeFloat:floatValue forKey:varName];
-            } else if ([varType isEqualToString:@"d"]) {
+            } else if (*varType == 'd') {
                 double doubleValue = *((double *)(stuffBytes + offset));
                 [aCoder encodeDouble:doubleValue forKey:varName];
-            } else if ([varType isEqualToString:@"q"]) {
+            } else if (*varType == 'q') {
                 NSInteger integerValue = *((NSInteger *)(stuffBytes + offset));
                 [aCoder encodeInteger:integerValue forKey:varName];
-            } else if ([varType isEqualToString:@"Q"]) {
+            } else if (*varType == 'Q') {
                 NSUInteger uintegerValue = *((NSUInteger *)(stuffBytes + offset));
                 [aCoder encodeInteger:uintegerValue forKey:varName];
             }
