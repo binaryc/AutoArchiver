@@ -45,10 +45,10 @@ static NSString *didAddMethod;
             continue;
         }
         
-        NSString *varType = [NSString stringWithUTF8String:ivar_getTypeEncoding(var)];
+        const char *varType = ivar_getTypeEncoding(var);
         
         id obj;
-        if ([varType hasPrefix:@"@"]) {
+        if (*varType == '@') {
             obj = [aDecoder decodeObjectForKey:varName];
             object_setIvar(self, var, obj);
         } else {
@@ -58,27 +58,27 @@ static NSString *didAddMethod;
             void *src = NULL;
             void *dst = (__bridge void *)instance + offset;
             
-            if ([varType isEqualToString:@"B"]) {
+            if (*varType == 'B') {
                 BOOL boolValue = [aDecoder decodeBoolForKey:varName];
                 size = sizeof(boolValue);
                 src = &boolValue;
-            } else if ([varType isEqualToString:@"i"]) {
+            } else if (*varType == 'i') {
                 int intValue = [aDecoder decodeIntForKey:varName];
                 size = sizeof(intValue);
                 src = &intValue;
-            } else if ([varType isEqualToString:@"f"]) {
+            } else if (*varType == 'f') {
                 float floatValue = [aDecoder decodeFloatForKey:varName];
                 size = sizeof(floatValue);
                 src = &floatValue;
-            } else if ([varType isEqualToString:@"d"]) {
+            } else if (*varType == 'd') {
                 double doubleValue = [aDecoder decodeDoubleForKey:varName];
                 size = sizeof(doubleValue);
                 src = &doubleValue;
-            } else if ([varType isEqualToString:@"q"]) {
+            } else if (*varType == 'q') {
                 NSInteger integerValue = [aDecoder decodeIntegerForKey:varName];
                 size = sizeof(integerValue);
                 src = &integerValue;
-            } else if ([varType isEqualToString:@"Q"]) {
+            } else if (*varType == 'Q') {
                 NSUInteger uintegerValue = [aDecoder decodeIntegerForKey:varName];
                 size = sizeof(uintegerValue);
                 src = &uintegerValue;

@@ -19,4 +19,6 @@
 
 @property (nonatomic, strong) NSString *name;
 
+@property (nonatomic, strong) User *bestFriend;
+
 @end

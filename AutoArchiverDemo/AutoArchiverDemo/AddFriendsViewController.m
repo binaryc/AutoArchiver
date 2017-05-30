@@ -80,6 +80,16 @@ static NSString *UserMarriedSituationCellIdentifier = @"UITableViewCell";
 
         user.married = self.tableView.indexPathForSelectedRow.row && self.tableView.indexPathForSelectedRow.section == 1;
         
+        User *bestFriend = [[User alloc] init];
+        bestFriend.age = 19;
+        bestFriend.userID = 10001;
+        bestFriend.married = NO;
+        bestFriend.height = 1.85;
+        bestFriend.weight = 75;
+        bestFriend.name = @"Hell0";
+        
+        user.bestFriend = bestFriend;
+        
         NSData *data = [NSKeyedArchiver archivedDataWithRootObject:user];
         [userDatas addObject:data];
         [userDatas writeToFile:filePath atomically:YES];
